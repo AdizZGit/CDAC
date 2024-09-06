@@ -28,15 +28,5 @@ public class Date {
  
 
 
-// import java.time.LocalDate;
-// public class Date {
-//     public static void main(String args[]){
-//         LocalDate lt= LocalDate.now();
-//         int x = lt.getDayOfMonth();
-//         int y= lt.getMonthValue();
-//         int z= lt.getYear();
-//         System.out.println(x+y+z);
 
-//     }
-// }
 
