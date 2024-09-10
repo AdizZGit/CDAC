@@ -58,3 +58,15 @@ public class Que1_3 {
         l.printRecord();          
     }
 }
+
+
+/* Output 
+Enter Principal Amount: 
+54000
+Enter Annual Interest Rate: 
+12
+Enter the Loan Term (in years): 
+5
+Monthly Payment: ₹1201.20
+Total Amount to be Paid over the Loan Term: ₹72072.01
+*/
