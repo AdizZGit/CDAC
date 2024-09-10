@@ -1,4 +1,15 @@
+/* 
+Develop a system to compute the future value of an investment with compound interest. The system should:
+1.	Accept the initial investment amount, annual interest rate, number of times the interest is compounded per year, and investment duration (in years) from the user.
+2.	Calculate the future value of the investment using the formula:
+o	Future Value Calculation:
+	futureValue = principal * (1 + annualInterestRate / numberOfCompounds)^(numberOfCompounds * years)
+o	Total Interest Earned: totalInterest = futureValue - principal
+3.	Display the future value and the total interest earned, in Indian Rupees (₹).
+Define the class CompoundInterestCalculator with fields, an appropriate constructor, getter and setter methods, a toString method and business logic methods. Define the class CompoundInterestCalculatorUtil with methods acceptRecord, printRecord.
+Define the class Program with a main method to test the functionality of the utility class.
 
+*/
 package pack_comp;
 import java.util.Scanner;
 class CoumpoundInterestCalculator{
@@ -47,3 +58,18 @@ public class Compound_Cal {
 	}
 
 }
+
+
+/* 
+Output
+Enter initial ammount:
+50000
+Enter annual interest rate:
+12.5
+Enter the no. of times interest compounded in year
+2
+Enter the duration:
+5
+Future value: 91676.79 
+Total Interest Earned: 41676.79 
+*/
