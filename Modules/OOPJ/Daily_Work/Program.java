@@ -1,74 +1,45 @@
-package pack_inhe;
-
+package org.example.demo1;
 class Person{
-	String name;
-	int age;
-
+	private String name;
+	private int age;
+	
 	public Person() {
-		this.name = "";
-		this.age = 0;
+		this.name="";
+		this.age=0;
 	}
-	
-	public Person(String name, int age) {
-		this.name = name;
-		this.age = age;
+	public Person(String name,int age) {
+		this.name=name;
+		this.age=age;
 	}
-	
-	public  void showRecord( ) {
-		System.out.println("Name	:	"+this.name);
-		System.out.println("Age	:	"+this.age);
+	public void display() {
+		System.out.println("Name: "+this.name);
+		System.out.println("age: "+this.age);
 	}
 }
-
-
-class Employee extends Person{
-	int empid;
-	float salary;
-	
-	public Employee() {
-		super();
-		this.empid = 0;
-		this.salary = 0.0f;
+class Emp extends Person{
+	private int sal;
+	private int eid;
+	public Emp() {
+		
+		this.sal=0;
+		this.eid=0;
 	}
-
-	public Employee(int empid, float salary) {
-		super();
-		this.empid = empid;
-		this.salary = salary;
+	public Emp(String name,int age,int sal,int eid) {
+		super(name,age);
+		this.sal=sal;
+		this.eid=eid;
 	}
-	
-	public Employee(String name, int age, int empid, float salary) {
-	super( name, age );	
-		this.empid = empid;
-		this.salary = salary;
-	}
-	
-	public void displayRecord( ) {
-		System.out.println("Empid	:	"+this.empid);
-		System.out.println("Salary	:	"+this.salary);
+	public void display() {
+		super.display();
+		
+		System.out.println("Sal: "+this.sal);
+		System.out.println("eid: "+this.eid);
 	}
 }
-public class Program{
+public class Program {
 	public static void main(String[] args) {
-		//Employee e=new Employee();
-		Employee e1=new Employee("adxtya", 22, -3, 5.0f );
-		
-//		e.showRecord();
-//		e.displayRecord();
-		e1.showRecord();
-		e1.displayRecord();
-		
+		Emp p=new Emp("adi",12,32,32);
+		p.display();
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 }
