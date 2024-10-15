@@ -1,0 +1,115 @@
+show databases;
+use cdacmumbai;
+------------------------------------------ASSIGNMENT 1------------------------------------------
+CREATE TABLE SALESPEOPLE (
+    Snum INT(4),
+    Sname VARCHAR(10),
+    City VARCHAR(10),
+    Comm FLOAT(3,2)
+);
+
+	INSERT INTO SALESPEOPLE VALUES
+    		(1001, 'Peel', 'London', 0.12), 
+    		(1002, 'Serres', 'San Jose', 0.13),
+   		 (1004, 'Motika', 'London', 0.11),
+    		(1007, 'Rifkin', 'Barcelona', 0.15),
+    		(1003, 'Axelrod', 'New York', 0.10);
+ 
+	select * from SALESPEOPLE;
+
+CREATE TABLE CUSTOMERS (
+    Cnum INT(10),
+    Cname VARCHAR(10),
+    City VARCHAR(10),
+    Rating INT(4),
+    Snum INT(4)
+);
+
+	INSERT INTO CUSTOMERS VALUES
+   		 (2001, 'Hoffman', 'London', 100, 1001), 
+    		(2002, 'Giovanni', 'Rome', 200, 1003),
+    		(2003, 'Liu', 'San Jose', 200, 1002),
+    		(2004, 'Grass', 'Berlin', 300, 1002),
+    		(2006, 'Clemens', 'London', 100, 1001),
+    		(2008, 'Cisneros', 'San Jose', 300, 1007),
+    		(2007, 'Pereira', 'Rome', 100, 1004); 
+
+	SELECT * FROM CUSTOMERS;
+
+CREATE TABLE ORDERS (
+    Onum INT(4),
+    Amt FLOAT(7,2),
+    Odate DATE,
+    Cnum INT(4),
+    Snum INT(4)
+);
+
+	INSERT INTO ORDERS VALUES
+  	  	(3001, 18.69, '1990-10-03', 2008, 1007),
+ 	   	(3003, 767.19, '1990-10-03', 2001, 1001),
+    		(3002, 1900.10, '1990-10-03', 2007, 1004),
+    		(3005, 5160.45, '1990-10-03', 2003, 1002),
+   		 (3006, 1098.16, '1990-10-03', 2008, 1007),
+    		(3009, 1713.23, '1990-10-04', 2002, 1003),
+    		(3007, 75.75, '1990-10-04', 2004, 1002),
+    		(3008, 4723.00, '1990-10-05', 2006, 1001),
+    		(3010, 1309.95, '1990-10-06', 2004, 1002),
+    		(3011, 9891.88, '1990-10-06', 2006, 1001);
+
+select * from orders;
+show tables;
+
+
+------------------------------------------ASSIGNMENT 2------------------------------------------
+
+1)	Which field of the Customers table is the primary key?
+-->	Cnum is primary key of the customers table . We know that the primary key is used to uniquely identify any specific row in the table . The primary key 
+	should be unique and not null.
+ 
+2)	What is the 4th column of the Customers table?
+-->	The 4th column of the Customers table is "Rating".
+ 
+3)	What is another word for row?  For column? 
+-->	Another word for row is Tuple and Another word for column is Attribute.
+
+4)	Why isn’t it possible to see the first five rows of a table? 
+-->	It is possible to see the first five rows of the table by using Top command .
+	for ex :
+	mysql> Select * from customers;
+	+------+----------+----------+--------+------+
+	| Cnum | Cname    | City     | Rating | Snum |
+	+------+----------+----------+--------+------+
+	| 2001 | Hoffman  | Rome     |    100 | 1001 |
+	| 2002 | Giovanni | Rome     |    200 | 1003 |
+	| 2003 | Liu      | San Jose |    200 | 1002 |
+	| 2004 | Grass    | Berlin   |    300 | 1002 |
+	| 2006 | Clemens  | London   |    100 | 1001 |
+	| 2008 | Cisneros | San Jose |    300 | 1007 |
+	| 2007 | Persia   | Rome     |    100 | 1004 |
+	+------+----------+----------+--------+------+
+	7 rows in set (0.00 sec)
+	
+	mysql> SELECT *
+    	-> FROM customers
+    	-> LIMIT 5;
+	+------+----------+----------+--------+------+
+	| Cnum | Cname    | City     | Rating | Snum |
+	+------+----------+----------+--------+------+
+	| 2001 | Hoffman  | Rome     |    100 | 1001 |
+	| 2002 | Giovanni | Rome     |    200 | 1003 |
+	| 2003 | Liu      | San Jose |    200 | 1002 |
+	| 2004 | Grass    | Berlin   |    300 | 1002 |
+	| 2006 | Clemens  | London   |    100 | 1001 |
+	+------+----------+----------+--------+------+
+	5 rows in set (0.00 sec)
+	
+------------------------------------------ASSIGNMENT 3------------------------------------------
+
+1)	Does ANSI recognize the data type DATE? 
+-->	Yes ANSI supports DATE as a datatype. The default format of date datatype is 
+	YYYY-MM-DD . We can perform various types of operations using DATE such as 
+	addition of dates , subtraction of dates .   
+
+2)	Which subdivision of SQL is used to insert values in tables? 
+-->	Subdivision of SQL is used to insert values in tables is Data Manipulation Language . It is the subset of the SQL . DML is used to modify the content of the table.
+	
