@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+    <style>
+        #heading{
+            text-align: center;
+            text-decoration: underline;
+        }
+        #main{
+            font-size: 19px;
+        }
+        #main{
+            margin: auto;
+            width: 700px;
+            background-color: beige;
+            padding: 50px;
+        }
+        body{
+            background-color:cadetblue
+        }
+    </style>
+</head>
+<body>
+   <div id="heading">
+    <h2>STUDENT REGISTRATION FORM</h2>
+   </div> 
+   <div id="main">
+    <table border="0px" width="70%">
+        <tr>
+        <td>First Name</td>
+        <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Last Name</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Date</td>
+            <td><select>
+                <option>Day</option>
+                <option>31</option>
+            </select>
+            <select>
+                <option>Month</option>
+                <option>July</option>
+            </select>
+            <select>
+                <option>Year</option>
+                <option>2002</option>
+            </select>
+        </td>
+        </tr>
+        <tr>
+            <td>Email Id</td>
+        <td><input type="email"></td>
+        </tr>
+        <tr>
+            <td>Mobile Number</td>
+        <td><input type="number"></td>
+        </tr>
+        <tr>
+            <td>Address</td>
+           <td> <textarea></textarea></tr>
+        </tr>
+        <tr>
+            <td>City</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Pin <Code></Code></td>
+        <td><input type="number"></td>
+        </tr>
+        <tr>
+            <td>Country</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Hobbies</td>
+            <td>Drawing<input type="checkbox">
+                Singing<input type="checkbox">
+                Dancing<input type="checkbox">
+                Sketching<input type="checkbox"><br>
+                others<input type="checkbox">
+                <input type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>Courses Applied For</td>
+            <td>Pgdac<input type="radio" name="1">
+            Pgdbda<input type="radio" name="1"></td>
+            
+        </tr>
+    </table>
+    <table border="1px">
+        <tr>
+            <td>Sr.No</td>
+            <td>Examiniation</td>
+            <td>Board</td>
+            <td>Percentage</td>
+            <td>Year of passing</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Class X</td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Diploma</td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Graduation</td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+        </tr>
+    </table>
+    <button>Submit</button>
+    <button id="right">Reset</button>
+   </div>
+</body>
