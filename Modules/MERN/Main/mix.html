@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Updated Form</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+           background: linear-gradient(black ,white); /* Soft blue background */
+            font-family: Arial, sans-serif;
+            margin-bottom: 170px;
+        }
+        .container {
+            display: flex;
+            height: 500px;
+            width: 800px;
+            border: 2px solid #ccc;
+            margin: auto;
+            margin-top: 50px;
+            border-radius: 20px;
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+             overflow: hidden;/* For rounded borders */
+            background-color: #ffffff; /* White background for container */
+        }
+        .form {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            align-items: center;
+            background-color: #87ceeb; 
+            padding: 20px;
+        }
+        .form h2 {
+            font-size: 2rem;
+            font-family: 'Arial Narrow Bold', sans-serif;
+            margin: 20px;
+            color: #333;
+        }
+        .box {
+            padding: 13px;
+            width: 75%;
+            margin: 10px;
+            border-radius: 15px;
+            border: 1px solid #ddd;
+            background-color: #f9f9f9;
+        }
+        #btn {
+            padding: 12px 30px;
+            margin-top: 20px;
+            background-color: #333;
+            color: white;
+            font-weight: bold;
+            border: none;
+            border-radius: 20px;
+            transition: background-color 0.3s ease;
+        }
+        #btn:hover {
+            background-color: #32cd32; /* Lime green hover effect */
+            cursor: pointer;
+        }
+        .form a {
+            text-decoration: none;
+            color: #444;
+            margin-top: 10px;
+        }
+        .form a:hover {
+            color: #e63946; /* Red hover */
+        }
+        .side {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            background-color: #48cae4; /* Light cyan */
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .side h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+        .side p {
+            font-size: 1.2rem;
+            text-align: center;
+            padding: 10px;
+            color: #ffffff;
+            font-family: 'Arial Narrow Bold', sans-serif;
+        }
+        .side #btn {
+            background-color: #fff;
+            color: #333;
+            margin-top: 20px;
+        }
+        .side #btn:hover {
+            background-color: #ff7f50; /* Coral hover effect */
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form class="form">
+            <h2>Sign In</h2>
+            <input type="email" class="box" placeholder="Enter Email">
+            <input type="password" class="box" placeholder="Enter Password">
+            <input type="submit" id="btn" value="Sign In">
+            <a href="#">Forgot Your Password?</a>
+        </form>
+        <div class="side">
+           <h2>Create Account!</h2>
+            <p>Join us now and unlock a world of possibilities with exclusive features.</p>
+            <input type="submit" id="btn" value="Sign Up">
+        </div>
+    </div> 
+</body>
+</html>
