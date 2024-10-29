@@ -1,0 +1,347 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://cdn1.iconfinder.com/data/icons/food-drinks-59/1096/burger-512.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Burger Shot</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            /* background-color: antiquewhite; */
+
+        }
+
+        nav {
+            width: 100%;
+            height: auto;
+            /* background-color:pink; */
+            position: relative;
+            /* box-shadow: 5px 20px 20px silver; */
+        }
+
+        .logo {
+            width: 50px;
+            height: 60px;
+            margin-left: 15px;
+            margin-top: 5px;
+        }
+
+        .bname {
+            font-size: 25px;
+            margin-left: 10px;
+            font-family: cursive;
+            position: absolute;
+            top: 20px;
+            left: 60px;
+            color: white;
+        }
+
+        #navlinks {
+            position: absolute;
+            right: 40px;
+            top: 23px;
+
+        }
+
+        #navlinks a {
+            text-decoration: none;
+            margin-right: 30px;
+            font-family: cursive;
+            font-size: 20px;
+            color: white;
+            /* border: 1px solid aqua; */
+            font-weight: bolder;
+            padding: 10px;
+            border-radius: 12px;
+            /* margin-top: 15px; */
+            transition: background 0.5s;
+            /* border-bottom: 1px solid white; */
+
+        }
+
+        #navlinks a:hover {
+            background: rgb(0, 195, 255);
+            /* color: white; */
+        }
+
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            font-size: 24px;
+            position: absolute;
+            right: 40px;
+            top: 20px;
+        }
+
+        /* Media query for smaller screens */
+        @media (max-width: 920px) {
+            #navlinks {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                right: 40px;
+                top: 65px;
+                background-color: black;
+                border: 1px solid aqua;
+
+                border-radius: 8px;
+                padding: 10px;
+            }
+
+            #navlinks a {
+                margin: 5px 0;
+                /* margin-top: 20px; */
+                display: block;
+                /* color: red; */
+            }
+
+            .hamburger {
+                display: block;
+                color: red;
+            }
+        }
+
+        #outer {
+            margin-top: 50px;
+
+        }
+
+        #outer {
+            display: flex;
+            height: 100%;
+            width: 100%;
+            margin: auto;
+            /* background-color: yellow; */
+            /* margin-top: 50px; */
+        }
+
+        #inner1 {
+            height: 100%;
+            /* background-color: aqua; */
+            width: 50%;
+            color: white;
+        }
+
+        #inner2 {
+            height: 100%;
+            /* background-color:red; */
+
+            width: 50%;
+        }
+
+        .img {
+            height: 100%;
+            width: 100%;
+
+        }
+
+        p {
+            text-align: center;
+            font-size: 22px;
+            margin-top: 22%;
+            font-family: cursive;
+            padding: 10px;
+            color: aliceblue;
+        }
+
+        #btn {
+            padding: 20px;
+            border-radius: 15px;
+            color: white;
+            background-color: black;
+            box-shadow: 2px 2px white;
+            font-family: cursive;
+            cursor: pointer;
+            border: none;
+            margin-top: 50px;
+            margin-left: 50%;
+            font-size: 20px;
+            font-weight: bold;
+            transition: background 0.5s;
+
+        }
+
+        #btn:hover {
+            background: white;
+            color: red;
+        }
+
+        #btn a {
+            text-decoration: none;
+            color: aqua;
+        }
+
+        
+
+        #menu p {
+            margin: 10px;
+        }
+
+        #menu {
+            display: inline-block;
+            height: auto;
+            width: 100%;
+        }
+
+        .menu1 {
+            display: inline-block;
+            height: inherit;
+            width: 32%;
+            margin-left: 25px;
+            border: 0.5px solid sandybrown;
+            /* border-radius: 20px; */
+            /* border: 10px solid black; */
+        }
+
+        .menu2 {
+            display: inline-block;
+            width: 32%;
+            border: 0.5px solid sandybrown;
+            /* border-radius: 20px; */
+            height: auto;
+        }
+
+        .menu3 {
+            display: inline-block;
+            width: 32%;
+            border: 0.5px solid sandybrown;
+        }
+
+        .dish1 {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            margin-bottom: 20px;
+
+
+
+        }
+
+        #heading {
+            padding-top: 20px;
+
+        }
+
+        #heading p {
+            color: aqua;
+            margin-top: 120px;
+        }
+
+        #scroll {
+            animation: blinker 4s linear infinite;
+            color: aqua;
+            font-size: 23px;
+
+            margin-bottom: 30px;
+        }
+
+        .scroll11 {
+            animation: blinker 4s linear infinite;
+            color: aqua;
+            font-size: 23px;
+
+            margin-bottom: 10px;
+
+        }
+
+        @keyframes blinker {
+            50% {
+                opacity: 0;
+            }
+        }
+
+        .fa-reddit,
+        .fa-instagram,
+        .fa-discord,
+        .fa-twitter {
+            font-size: 30px;
+            color: white;
+
+        }
+
+        #fotter {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <img src="https://cdn1.iconfinder.com/data/icons/food-drinks-59/1096/burger-512.png" alt="Logo Thumbnail"
+            class="logo">
+        <span class="bname">BurgerShot</span>
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        <div id="navlinks">
+            <a href="#">Home</a>
+            <a href="signup.html">Sign up</a>
+            <a href="mix.html">Sign In</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="#">About Us</a>
+        </div>
+
+    </nav>
+    <div id="outer">
+        <div id="inner1">
+            <p>Indulge in the ultimate burger experience with
+                our handcrafted creations, made fresh with only the
+                finest ingredients to deliver a taste you’ll crave.
+                Customize your perfect burger with a wide range of toppings,
+                sauces, and sides, crafted just the way you like it.</p>
+            <button id="btn"><a href="#heading">Know More</a></button>
+        </div>
+        <div id="inner2">
+            <img src="https://wallpaperaccess.com/full/1312802.jpg" class="img">
+
+        </div>
+    </div>
+    <div id="heading">
+        <marquee id="scroll">Today's Special</marquee>
+        <div id="menu">
+
+            <div class="menu1">
+                <img src="https://static.vecteezy.com/system/resources/previews/000/723/624/large_2x/burger-on-black-background-photo.jpg"
+                    class="dish1">
+                <marquee class="scroll11">Cheese Burger</marquee>
+            </div>
+            <div class="menu2">
+                <img src="https://www.butter-n-thyme.com/wp-content/uploads/2023/04/Chicken-Burger.jpg" class="dish1">
+                <marquee class="scroll11">Chicken Burger</marquee>
+
+            </div>
+            <div class="menu3">
+                <img src="https://www.finedininglovers.com/sites/g/files/xknfdk626/files/2022-05/burger_0.jpg"
+                    class="dish1">
+                <marquee class="scroll11">Beyond meat burger</marquee>
+
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Follow Us On ... <br><br>
+
+            <a href="#"><i class="fa-brands fa-reddit"></a></i>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-discord"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </p>
+
+    </footer>
+    <script>
+        function toggleMenu() {
+            const navlinks = document.getElementById('navlinks');
+            navlinks.style.display = navlinks.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+
+</html> 
