@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //1.print out "program completed" at the start of your code
+        //2.create a promise that resolves after 3sec and rejects after 2 seconds
+        //3.log out the promise while its pending
+        //4.Print out "Program in progress..." as well
+
+        //////////////////////////////////111111111111
+        // console.log("Program started");
+        // const mypromise=new Promise((resolve,reject)=>{
+        //     setTimeout(()=>{
+        //         resolve();
+        //     },3000);
+        //     setTimeout(()=>{
+        //         reject();
+        //     },2000);
+        // });
+        // console.log(mypromise);
+        // console.log("Program in progress...");
+        // mypromise.then(()=>{
+        //     console.log("Program completed");
+        // }).catch(()=>{
+        //     console.log("Program failed");
+        // });
+
+        ///////////////////////////////////222222222222222
+        //  1. Print out "Program started" at the start of your code
+        //  2. Create a Promise that resolves after 3 seconds
+        //   3. Log out the promise while it's pending
+        //   4. Print out "Program in progress..." as well
+
+        //  5. Print out "Step 1 complete" when the first promise fulfills
+        //   6. Have the first promise return another new Promise that will
+        //      fulfill after 3 seconds with the message: "Step 2 Complete"
+
+        // 7. Print out the message from the second promise after it
+        //  fulfills ("Step 2 Complete")
+
+        // console.log("Program Started..");
+        // const mypromise = new Promise((resolve, reject) => {
+        //     setTimeout(() => {
+        //         resolve();
+        //     }, 3000);
+        // });
+        // console.log(mypromise);
+        // console.log("Program is in progress...");
+        // mypromise.then(() => {
+        //     console.log("Step 1 completed");
+
+        //     return new Promise((resolve, reject) => {
+        //         setTimeout(() => {
+        //             resolve();
+        //         }, 3000)
+        //     });
+        // }).then(() => {
+        //     console.log("Step 2 completed");
+        // });
+
+
+        //////////////////////////////////////////////////////////////333333333
+
+    //    console.log("Program Started...");
+    //     const mypro = new Promise((resolve, reject) => {
+    //         setTimeout(() => {
+    //             resolve({ data: "Hello , Aditya ", error: null });
+    //         }, 5000);
+    //     });
+    //     // console.log(mypro);
+        // console.log("Progrem in process...");
+        // ////////////////////////////////////////////Promise 1111
+        // mypro.then((val) => {
+        //     console.log(val);
+
+            //////////////////////////////////////////////////////////new promiseeeeeee        
+        //     return new Promise((resolve, reject) => {
+        //         setTimeout(() => {
+        //             resolve("First Promise Chain Completed...");
+        //         }, 2000);
+        //     })
+        // }).then((x) => {
+        //     console.log(x);
+        // });
+        //////////////////////////////////////////////////////////
+
+        // mypro.then((val) => {
+        //     console.log(val);
+
+        //     return new Promise((resolve, reject) => {
+        //         setTimeout(() => {
+        //             resolve("Second chain completed");
+        //         }, 10000)
+        //     })
+        // }).then((x) => {
+        //     console.log(x);
+        // }) 
+
+
+///////////////////////////////////////////////////////////////////////4444444444444444444444
+
+const pro1=new Promise((resolve, reject)=>{
+    setTimeout(()=>{
+        var x=9;
+        resolve(x);
+    },2000);
+})
+const pro2=new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        var y=1;
+        resolve(y)
+    },2000);
+})
+Promise.all([pro1,pro2]).then((values)=>{
+    console.log(values);
+    const value1=values[0];
+    const value2=values[1];
+    console.log(value1,value2);
+    console.log("The Sum is",value1+value2);
+    
+})
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//   1. Create a Promise that resolves with the number 10 after
+//        3 seconds
+//     2. Create another Promise that resolves with the number
+//        20 after 5 seconds
+
+//     How can we log out the sum (30) of these two resolved values
+//     once, after BOTH promises successfully fulfill?
+
+    
+       
+const pro1=new Promise((resolve, reject)=>{
+    setTimeout(()=>{
+        var x=9;
+        resolve(x);
+    },2000);
+})
+const pro2=new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        var y=1;
+        resolve(y)
+    },2000);
+})
+Promise.all([pro1,pro2]).then((values)=>{
+    console.log(values);
+    const value1=values[0];
+    const value2=values[1];
+    console.log(value1,value2);
+    console.log("The Sum is",value1+value2);
+    
+})
+    </script>
+</body>
+</html>
