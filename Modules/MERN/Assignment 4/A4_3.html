@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       function fetch(url ,cb){
+            setTimeout(()=>{
+                const x=`response from the url ${url}`;
+                cb(x);
+            },4000);
+       }
+       fetch("https://tinder.com/en-GB",(cb)=>{
+        console.log(cb);
+       });
+    </script>
+</body>
+</html>

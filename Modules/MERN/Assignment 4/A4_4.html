@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       function fetch(url, cb) {
+    setTimeout(() => {
+        const iserror = false;
+        if (iserror) {
+            cb("ERROR: THE SITE IS DOWN",null);
+        } else {
+            const x = `Response from url -> ${url}`;
+            cb(null, x); 
+        }
+    }, 2000);
+}
+
+fetch("https://tinder.com/en-GB", function (iserror, respo) {
+    if (iserror) {
+        console.log(iserror);
+    } else {
+        console.log(respo);
+    }
+});
+
+    </script>
+</body>
+</html>
