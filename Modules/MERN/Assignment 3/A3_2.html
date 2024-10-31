@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A3_2</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        #container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+        background-color: aqua;
+        
+        }
+        #child{
+            height: 600px;
+            width: 350px;
+            background-color: red;
+            padding: 20px;
+            border-radius: 20px;
+            
+
+        }
+        .label{
+            color:white;
+            display:block;
+            margin-top: 0;
+            text-align: left;
+        }
+        #form{
+            padding: 40px;
+            margin-right: 25px;
+        }
+        .ip{
+            /* justify-content: left; */
+          padding: 10px;
+          margin-bottom: 20px;
+          width: 100%;
+        }
+        #data{
+            height: 190px;
+            width: 245px;
+            padding: 10px;
+        
+            background-color: white;
+        }
+        #data{
+            margin-top: 15px;
+        }
+ </style>
+</head>
+<body>
+    <div id="container">
+        <div id="child">
+            <div id="form">
+                <label class="label">First Name</label>
+                <input type="Text" class="ip" id="fname">
+                <label class="label" class="ip">Last Name</label>
+                <input type="Text" class="ip" id="lname">
+                <label class="label" class="ip">Contact Name</label>
+                <input type="number" class="ip" id="contact">
+                <label class="label" class="ip">Email Id</label>
+                <input type="email" class="ip" id="email">
+                <input type="submit" id="#btn" onclick="myfun()">
+                <div id="data">
+                <p id="out1"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function myfun(){
+        const x=document.getElementById('fname').value;
+        const y=document.getElementById('lname').value;
+        const z=document.getElementById('contact').value;
+        const a=document.getElementById('email').value;
+            
+        document.getElementById('out1').innerHTML=
+        `<p> Your Info : </p>
+        <p> First Name : ${x} </p>
+        <p>Last Name: ${y}</p>
+        <p>Contact Number: ${z}</p>
+        <p>Email Id: ${a}</p>`
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background:black;
+            font-size: 20px;
+        }
+        
+        .bold{
+            font-size: 20px ;
+           color: black;
+        }
+        p{
+            color: white;
+            padding: 10px;
+            text-align: justify;
+        }
+        #container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100%;
+        }
+        #child{
+            height: 200px;
+            width: 500px;
+            border: 1px solid darkorange;
+            padding:20px;
+            border-radius: 20px;
+            box-shadow: 0px 0px 40px white
+
+        }
+        #child a{
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+
+   <div id="child">
+    <a href="#" onmouseover="mouseover()" onmouseout="mouseout()" >[on mouse over here bold words of the following paragraph will be highlighted]</a>
+   
+    <p><b class="bold">We </b>have just started this section for the users
+    (<b class="bold">beginner </b>to intermediate) who <b class="bold">want</b> to work with various JavaScript <b class="bold">problems </b>and write scripts  to
+<b class="bold">test </b>their JavaScript <b class="bold">skill</b></p>
+</div>
+</div>
+<script>
+     function mouseover(){
+       var a= document.getElementsByClassName('bold');
+        for(i=0;i<a.length;i++){
+            a[i].style.color='red',
+            a[i].style.fontSize='22 px';
+        }
+     }
+     function mouseout(){
+        var a=document.getElementsByClassName('bold');
+        for(i=0;i<a.length;i++){
+            a[i].style.color='black',
+            a[i].style.fontSize='20px';
+        }
+     }
+</script>
+</body>
+</html>
