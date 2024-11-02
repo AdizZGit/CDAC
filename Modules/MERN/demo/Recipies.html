@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="icon"
+        href="https://png.pngtree.com/png-clipart/20230323/original/pngtree-cooking-logo-png-image_9001296.png">
+        <link rel="stylesheet" href="Recipies.css">
+        <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg mb-5">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://png.pngtree.com/png-clipart/20220628/original/pngtree-food-logo-png-image_8239844.png"
+                    alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                Bootstrap
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Recipes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <button class="btn btn-outline-light" type="submit">Login</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div id="heading">
+        <marquee id="scroll" direction="right">Inventory</marquee>
+    </div>
+    
+
+    <div class="container">
+        <!-- <div class="row">
+            <div class="col-md-4 mb-5">
+                <div class="card" style="width: 100%;   " >
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.F0RGJ8Fm8dWYMxyXC-PFxgAAAA&pid=Api&P=0&h=180"
+                        class="card-img-top" alt="Spaghetti Carbonara">
+                    <div class="card-body">
+                        <h5 class="card-title">Spaghetti Carbonara</h5>
+                        <p class="card-text">A classic Italian pasta dish.</p>
+                        <a href="#" class="btn btn-primary" >Recipe</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-5">
+                <div class="card" style="width: 100%;">
+                    <img src="https://tse2.mm.bing.net/th?id=OIP.KO0D1jR1jV_2troTRQiSHQHaGY&pid=Api&P=0&h=180"
+                        class="card-img-top" alt="Avocado Toast">
+                    <div class="card-body">
+                        <h5 class="card-title">Avocado  Toast</h5>
+                        <p class="card-text">Healthy and quick, perfect for breakfast.</p>
+                        <a href="#" class="btn btn-primary">Recipe</a>
+                    </div>
+                </div>
+            </div> -->
+            <!-- <div class="col-md-4 mb-5" >
+                <div class="card" style="width: 100%;">
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.25A4UEuZJQk9OMvnMxCW9wHaE5&pid=Api&P=0&h=180"
+                        class="card-img-top" alt="Grilled Chicken Salad">
+                    <div class="card-body">
+                        <h5 class="card-title">Grilled Chicken Salad</h5>
+                        <p class="card-text">Fresh and flavorful with a touch of crunch.</p>
+                        <a href="#" class="btn btn-primary">Recipe</a>
+                    </div>
+                </div>
+            </div> -->
+            <!-- <div class="col-md-4 mt-5" >
+                <div class="card" style="width: 100%;">
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.Y6zCBQbvkmBgUZbIi6DLeQHaE8&pid=Api&P=0&h=180"
+                        class="card-img-top" alt="Grilled Chicken Salad">
+                    <div class="card-body">
+                        <h5 class="card-title">Seafood paella</h5>
+                        <p class="card-text">
+                          
+Seafood paella is a vibrant Spanish dish with saffron rice and fresh seafood.</p>
+                        <a href="#" class="btn btn-primary">Recipe</a>
+                    </div>
+                </div>
+            </div> -->
+            <!-- <div class="col-md-4  mt-5" >
+                <div class="card" style="width: 100%;">
+                    <img src="Singapore-Chilli-Crab.jpg"
+                        class="card-img-top" alt="Grilled Chicken Salad">
+                    <div class="card-body">
+                        <h5 class="card-title"> Chili crab</h5>
+                        <p class="card-text">
+                            Chili crab is a popular Singaporean dish featuring tender crab coated in a spicy, sweet, and savory tomato-based sauce.</p>
+                        <a href="#" class="btn btn-primary">Recipe</a>
+                    </div>
+                </div>
+            </div> -->
+            <!-- <div class="col-md-4 mt-5" >
+                <div class="card" style="width: 100%;">
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.7Zl2MTB3qQYOMe-0nbWkggHaE7&pid=Api&P=0&h=180"
+                        class="card-img-top" alt="Grilled Chicken Salad">
+                    <div class="card-body">
+                        <h5 class="card-title">Massaman curry</h5>
+                        <p class="card-text">Massaman curry is a rich, mildly spiced Thai dish with tender meat and fragrant spices.</p>
+                        <a href="#" class="btn btn-primary">Recipe</a>
+                    </div>
+                </div>
+            </div> -->
+            
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <!-- Spaghetti Carbonara Card -->
+            <div class="col-md-4 mb-5">
+                <div class="card" style="width: 100%;">
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.F0RGJ8Fm8dWYMxyXC-PFxgAAAA&pid=Api&P=0&h=180"
+                        class="card-img-top" alt="Spaghetti Carbonara">
+                    <div class="card-body">
+                        <h5 class="card-title">Spaghetti Carbonara</h5>
+                        <p class="card-text">A classic Italian pasta dish.</p>
+                        <!-- Button to Open Modal -->
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#carbonaraModal">Recipe</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Avocado Toast Card -->
+            <div class="col-md-4 mb-5">
+                <div class="card" style="width: 100%;">
+                    <img src="https://tse2.mm.bing.net/th?id=OIP.KO0D1jR1jV_2troTRQiSHQHaGY&pid=Api&P=0&h=180"
+                        class="card-img-top" alt="Avocado Toast">
+                    <div class="card-body">
+                        <h5 class="card-title">Avocado Toast</h5>
+                        <p class="card-text">Healthy and quick, perfect for breakfast.</p>
+                        <!-- Button to Open Modal -->
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#avocadoModal">Recipe</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-5">
+                <div class="card" style="width: 100%;">
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.25A4UEuZJQk9OMvnMxCW9wHaE5&pid=Api&P=0&h=180"
+                        class="card-img-top" alt="Avocado Toast">
+                    <div class="card-body">
+                        <h5 class="card-title">Avocado Toast</h5>
+                        <p class="card-text">Healthy and quick, perfect for breakfast.</p>
+                        <!-- Button to Open Modal -->
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#avocadoModal">Recipe</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modals for Each Recipe -->
+    
+    <!-- Spaghetti Carbonara Modal -->
+    <div class="modal fade" id="carbonaraModal" tabindex="-1" aria-labelledby="carbonaraModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="carbonaraModalLabel">Spaghetti Carbonara</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    A classic Italian pasta dish made with eggs, cheese, pancetta, and pepper. Simple and delicious!
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Avocado Toast Modal -->
+    <div class="modal fade" id="avocadoModal" tabindex="-1" aria-labelledby="avocadoModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="avocadoModalLabel">Avocado Toast</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    A healthy and quick breakfast topped with mashed avocado, olive oil, and spices.
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+ 
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+</body>
+</html>

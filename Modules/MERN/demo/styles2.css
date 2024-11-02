@@ -1,0 +1,192 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+header nav a {
+    color: #fff;
+    margin: 0 0.5rem;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero section */
+.hero {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0 1.5rem;
+}
+
+.hero .btn {
+    padding: 0.5rem 1rem;
+    background-color: #ff6347;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero .btn:hover {
+    background-color: #ff4500;
+}
+
+/* Recipes section */
+.recipes-section {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.recipes-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.recipe-cards {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.recipe-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 300px;
+    text-align: left;
+}
+
+.recipe-card img {
+    width: 100%;
+    height: auto;
+}
+
+.recipe-card h3 {
+    margin: 0.5rem;
+}
+
+.recipe-card p {
+    margin: 0 0.5rem 1rem;
+}
+
+/* Meal Planner Section */
+.meal-planner-section {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.meal-planner-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.meal-planner-section .btn {
+    padding: 0.5rem 1rem;
+    background-color: #ff6347;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.
+'Ameal-planner-section .btn:hover {
+    background-color: #ff4500;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer nav a {
+    color: #fff;
+    margin: 0 0.5rem;
+    text-decoration: none;
+}
+
+footer nav a:hover {
+    text-decoration: underline;
+}
+
+.tools-section {
+    padding: 2rem 1rem;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.tools-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.tool-cards {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.tool-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    width: 300px;
+    text-align: left;
+}
+
+.tool-card h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.tool-card p {
+    margin: 0.5rem 0 1rem;
+}
+
+.tools-section .btn {
+    padding: 0.5rem 1rem;
+    background-color: #ff6347;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.tools-section .btn:hover {
+    background-color: #ff4500;
+}
