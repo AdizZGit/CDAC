@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fetchuser(){
+            return new Promise((resolve, reject)=>{
+                setTimeout(() => {
+                    var data = [{user:"Monkey",admin:"true"}];
+                    resolve(data);  
+                },3000 );
+            })
+        }
+        const login=(user)=>{
+            if(user.admin===true){
+                console.log("successfull logged in");
+            }
+            else{
+                console.log("failed to logged in");
+            }
+        };
+        const useadmin=async()=>{
+            try{
+                    var user=await fetchuser();
+                    login(user);
+            }
+            catch(error){
+                console.log(error);
+            }
+        }
+admin(user);
+    </script>
+</body>
+</html>
